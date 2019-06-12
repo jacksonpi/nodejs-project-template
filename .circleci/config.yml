@@ -102,9 +102,6 @@ workflows:
       - bundle_dependencies:
           requires: 
             - checkout_code
-      - code_analyzer:
-          requires:
-            - bundle_dependencies
       - chrome_test:
           requires:
             - bundle_dependencies
